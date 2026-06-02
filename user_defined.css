@@ -1,0 +1,18 @@
+:root {
+    --main-text-color: #383838;
+}
+
+@font-face {
+  font-family: 'Inconsolata';
+  src: url('chrome-extension://__MSG_@@extension_id__/fonts/Inconsolata.ttf') format('truetype');
+}
+
+*
+{
+    font-family: 'Inconsolata' !important;
+}
+
+h1.page-title
+{
+    color: var(--main-text-color) !important;
+}
