@@ -1,22 +1,18 @@
-function applyStyles(settings) {
-  CATEGORIES.forEach(cat => {
-    const color = settings[cat.id] || cat.default;
-    const elements = document.querySelectorAll(cat.selector);
-    
-    elements.forEach(el => {
-      el.style.setProperty('color', color, 'important');
-      // If it's a background category
-      if (cat.id === 'bg') el.style.setProperty('background-color', color, 'important');
-    });
-  });
-}
+// Function to apply the color
+const applyColor = (color) => {
+  document.documentElement.style.setProperty('--main-text-color', color);
+};
 
-// Initial Load
-chrome.storage.sync.get('userSettings', (result) => {
-  applyStyles(result.userSettings || {});
+// 1. Check storage immediately when the page loads
+chrome.storage.local.get(['selectedColor'], (result) => {
+  if (result.selectedColor) {
+    applyColor(result.selectedColor);
+  }
 });
 
-// Update on message
-chrome.runtime.onMessage.addListener((msg) => {
-  if (msg.action === "update") applyStyles(msg.settings);
+// 2. Listen for real-time updates from the popup
+chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
+  if (request.action === "changeColor") {
+    applyColor(request.color);
+  }
 });
