@@ -18,7 +18,7 @@
     font-family: 'Inconsolata' !important;
 }
 
-body, div.large.ic-Dashboard-header__layout, [data-cid="Pill"] *, [data-cid="Checkbox"] *, span.Grouping-styles__title, div.PlannerHeader, [data-cid="Heading"], div.EmptyDays-styles__nothingPlannedContent, button#planner-today-btn *
+body, div.large.ic-Dashboard-header__layout, [data-cid="Pill"] *, [data-cid="Checkbox"] *, span.Grouping-styles__title, div.PlannerHeader, [data-cid="Heading"], div.EmptyDays-styles__nothingPlannedContent, button#planner-today-btn *, div.header-bar, nav#breadcrumbs, div#course_show_secondary *, div.item-group-container, div.ig-row, button.btn, span.css-110mfqp-view-flexItem > label > span > span, button#mark_all_announcement_read *, div.module-sequence-footer-content, span.css-1ta5ds2-baseButton__content, span.css-j7s35e-formFieldLayout__children > span
 {
     background-color: var(--background-color) !important;
 }
@@ -28,12 +28,12 @@ div::after, span::after, a.Grouping-styles__hero
     background-image: none !important;
 }
 
-header#header
+header#header, div.ig-header
 {
     background-color: var(--sidebar-background-color) !important;
 }
 
-p, h1, h2, span.hidden-phone, div.EmptyDays-styles__nothingPlanned, [data-cid="InlineListItem"], div.planner-day > div > span
+p, h1, h2, h3, span.hidden-phone, div.EmptyDays-styles__nothingPlanned, [data-cid="InlineListItem"], div.planner-day > div > span, span.name, input[name="announcements_search"]
 {
     color: var(--body-text-color) !important;
 }
@@ -51,12 +51,22 @@ a.ic-app-header__logomark, div.ic-app-header__logomark-container
     height: 0px;
 }
 
-div.ToDoSidebarItem, div.PlannerHeader button *, [data-cid="BaseButton IconButton"] *
+div.ToDoSidebarItem, div.PlannerHeader button *, [data-cid="BaseButton IconButton"] *, i.icon-document, div.ig-details *, i.icon-mini-arrow-down, div.prerequisites, ul.pill, span.ic-section-tooltip, div.ic-item-row__content-container, svg.css-1uh2md0-inlineSVG-svgIcon, input[name="announcements_search"]::placeholder, span.css-11xkk0o-baseButton__children, span[data-testid="friendly-date-time"], span.css-mvoync-textInput__afterElement, i.icon-document, i.icon-paperclip, i.icon-discussion, i.icon-quiz, i.icon-link, i.icon-assignment
 {
     color: var(--secondary-text-color) !important;
 }
 
-button#planner-today-btn *
+button#planner-today-btn *, div#course_show_secondary *, div.item-group-container *, button.btn, input[name="announcements_search"], span.css-j7s35e-formFieldLayout__children > span, button#mark_all_announcement_read > span, span.css-1ta5ds2-baseButton__content
 {
     border-color: var(--secondary-text-color) !important;
+}
+
+span.name
+{
+    text-shadow: none !important;
+}
+
+ul.pill
+{
+    box-shadow: none !important;
 }
