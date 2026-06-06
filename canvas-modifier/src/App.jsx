@@ -8,6 +8,7 @@ function App() {
     { name: "Sidebar background color",  variable: "--sidebar-background-color"},
     { name: "Body text color",  variable: "--body-text-color"},
     { name: "Link text color",  variable: "--link-text-color"},
+    { name: "Secondary text color",  variable: "--secondary-text-color"},
   ]
 
   return (

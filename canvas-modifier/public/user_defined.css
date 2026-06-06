@@ -4,11 +4,13 @@
     --sidebar-background-color: #383838;
     --body-text-color: #383838;
     --link-text-color: #383838;
+    --secondary-text-color: #383838;
 }
 
 @font-face {
-font-family: 'Inconsolata';
-src: url('chrome-extension://__MSG_@@extension_id__/fonts/Inconsolata.ttf') format('truetype');
+    font-family: 'Inconsolata';
+    src: url('chrome-extension://__MSG_@@extension_id__/fonts/Inconsolata.ttf') format('truetype');
+    font-weight: 550;
 }
 
 *
@@ -16,12 +18,12 @@ src: url('chrome-extension://__MSG_@@extension_id__/fonts/Inconsolata.ttf') form
     font-family: 'Inconsolata' !important;
 }
 
-body
+body, div.large.ic-Dashboard-header__layout, [data-cid="Pill"] *, [data-cid="Checkbox"] *, span.Grouping-styles__title, div.PlannerHeader, [data-cid="Heading"], div.EmptyDays-styles__nothingPlannedContent, button#planner-today-btn *
 {
     background-color: var(--background-color) !important;
 }
 
-div::after
+div::after, span::after, a.Grouping-styles__hero
 {
     background-image: none !important;
 }
@@ -31,12 +33,12 @@ header#header
     background-color: var(--sidebar-background-color) !important;
 }
 
-p
+p, h1, h2, span.hidden-phone, div.EmptyDays-styles__nothingPlanned, [data-cid="InlineListItem"], div.planner-day > div > span
 {
     color: var(--body-text-color) !important;
 }
 
-a
+a, button, span.Grouping-styles__title
 {
     color: var(--link-text-color) !important;
 }
@@ -47,4 +49,14 @@ a.ic-app-header__logomark, div.ic-app-header__logomark-container
     background-color: var(--sidebar-background-color) !important;
     width: 0px;
     height: 0px;
+}
+
+div.ToDoSidebarItem, div.PlannerHeader button *, [data-cid="BaseButton IconButton"] *
+{
+    color: var(--secondary-text-color) !important;
+}
+
+button#planner-today-btn *
+{
+    border-color: var(--secondary-text-color) !important;
 }
