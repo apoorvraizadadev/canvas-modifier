@@ -1,5 +1,5 @@
 :root {
-    --main-text-color: #383838;
+    --background-color: #383838;
 }
 
 @font-face {
@@ -12,7 +12,7 @@
     font-family: 'Inconsolata' !important;
 }
 
-h2
+body
 {
-    color: var(--main-text-color) !important;
+    background-color: var(--background-color) !important;
 }

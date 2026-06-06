@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
     "name": "Canvas Modifier",
-    "version": "0.3.0",
+    "version": "0.4.0",
     "description": "Modifies Canvas",
 
     "action": {
@@ -20,5 +20,12 @@
         "activeTab",
         "storage",
         "scripting"
+    ],
+
+    "web_accessible_resources": [
+        {
+        "resources": ["fonts/*.ttf"],
+        "matches": ["<all_urls>"]
+        }
     ]
 }

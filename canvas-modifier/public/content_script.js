@@ -23,7 +23,9 @@ function applyColorsToPage(colors)
 {
     for (const [key, value] of Object.entries(colors))
     {
-        console.log(value);
         document.documentElement.style.setProperty(key, value);
     }
 }
+
+const fontUrl = chrome.runtime.getURL('fonts/Inconsolata.ttf');
+console.log(fontUrl);

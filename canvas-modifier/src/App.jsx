@@ -3,7 +3,7 @@ import './App.css'
 import ColorModifier from './ColorModifier'
 
 function App() {
-  const properties = [{ name: "Text",  variable: "--main-text-color"}]
+  const properties = [{ name: "Background color",  variable: "--background-color"}]
 
   return (
     <>
