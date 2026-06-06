@@ -1,10 +1,14 @@
+
 :root {
     --background-color: #383838;
+    --sidebar-background-color: #383838;
+    --body-text-color: #383838;
+    --link-text-color: #383838;
 }
 
 @font-face {
-  font-family: 'Inconsolata';
-  src: url('chrome-extension://__MSG_@@extension_id__/fonts/Inconsolata.ttf') format('truetype');
+font-family: 'Inconsolata';
+src: url('chrome-extension://__MSG_@@extension_id__/fonts/Inconsolata.ttf') format('truetype');
 }
 
 *
@@ -15,4 +19,32 @@
 body
 {
     background-color: var(--background-color) !important;
+}
+
+div::after
+{
+    background-image: none !important;
+}
+
+header#header
+{
+    background-color: var(--sidebar-background-color) !important;
+}
+
+p
+{
+    color: var(--body-text-color) !important;
+}
+
+a
+{
+    color: var(--link-text-color) !important;
+}
+
+a.ic-app-header__logomark, div.ic-app-header__logomark-container
+{
+    background-image: none !important;
+    background-color: var(--sidebar-background-color) !important;
+    width: 0px;
+    height: 0px;
 }
