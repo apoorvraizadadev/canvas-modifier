@@ -28,7 +28,7 @@ div::after, span::after, a.Grouping-styles__hero
     background-image: none !important;
 }
 
-header#header, div.ig-header
+header#header, div.ig-header, div.navigation-tray-container
 {
     background-color: var(--sidebar-background-color) !important;
 }
@@ -51,7 +51,7 @@ a.ic-app-header__logomark, div.ic-app-header__logomark-container
     height: 0px;
 }
 
-div.ToDoSidebarItem, div.PlannerHeader button *, [data-cid="BaseButton IconButton"] *, i.icon-document, div.ig-details *, i.icon-mini-arrow-down, div.prerequisites, ul.pill, span.ic-section-tooltip, div.ic-item-row__content-container, svg.css-1uh2md0-inlineSVG-svgIcon, input[name="announcements_search"]::placeholder, span.css-11xkk0o-baseButton__children, span[data-testid="friendly-date-time"], span.css-mvoync-textInput__afterElement, i.icon-document, i.icon-paperclip, i.icon-discussion, i.icon-quiz, i.icon-link, i.icon-assignment
+div.ToDoSidebarItem, div.PlannerHeader button *, [data-cid="BaseButton IconButton"] *, i.icon-document, div.ig-details *, i.icon-mini-arrow-down, div.prerequisites, ul.pill, span.ic-section-tooltip, div.ic-item-row__content-container, svg.css-1uh2md0-inlineSVG-svgIcon, input[name="announcements_search"]::placeholder, span.css-11xkk0o-baseButton__children, span[data-testid="friendly-date-time"], span.css-mvoync-textInput__afterElement, i.icon-document, i.icon-paperclip, i.icon-discussion, i.icon-quiz, i.icon-link, i.icon-assignment, div.css-8bodfv-text, :not(a) > div.css-1jyml41-text
 {
     color: var(--secondary-text-color) !important;
 }
