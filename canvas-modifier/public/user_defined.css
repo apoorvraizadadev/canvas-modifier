@@ -18,7 +18,7 @@
     font-family: 'Inconsolata' !important;
 }
 
-body, div.large.ic-Dashboard-header__layout, [data-cid="Pill"] *, [data-cid="Checkbox"] *, span.Grouping-styles__title, div.PlannerHeader, [data-cid="Heading"], div.EmptyDays-styles__nothingPlannedContent, button#planner-today-btn *, div.header-bar, nav#breadcrumbs, div#course_show_secondary *, div.item-group-container, div.ig-row, button.btn, span.css-110mfqp-view-flexItem > label > span > span, button#mark_all_announcement_read *, div.module-sequence-footer-content, span.css-1ta5ds2-baseButton__content, span.css-j7s35e-formFieldLayout__children > span
+body, div.large.ic-Dashboard-header__layout, [data-cid="Pill"] *, [data-cid="Checkbox"] *, span.Grouping-styles__title, div.PlannerHeader, [data-cid="Heading"], div.EmptyDays-styles__nothingPlannedContent, button#planner-today-btn *, div.header-bar, nav#breadcrumbs, div#course_show_secondary *, div.item-group-container, div.ig-row, button.btn, span.css-110mfqp-view-flexItem > label > span > span, button#mark_all_announcement_read *, div.module-sequence-footer-content, span.css-1ta5ds2-baseButton__content, span.css-j7s35e-formFieldLayout__children > span, a.btn
 {
     background-color: var(--background-color) !important;
 }
@@ -28,7 +28,7 @@ div::after, span::after, a.Grouping-styles__hero
     background-image: none !important;
 }
 
-header#header, div.ig-header, div.navigation-tray-container
+header#header, div.ig-header, div.navigation-tray-container, h2[data-cid="Heading"].css-16qi47e-view-heading
 {
     background-color: var(--sidebar-background-color) !important;
 }
@@ -36,6 +36,11 @@ header#header, div.ig-header, div.navigation-tray-container
 p, h1, h2, h3, span.hidden-phone, div.EmptyDays-styles__nothingPlanned, [data-cid="InlineListItem"], div.planner-day > div > span, span.name, input[name="announcements_search"]
 {
     color: var(--body-text-color) !important;
+}
+
+h2[data-cid="Heading"], div[data-testid="planner-item-raw"], div.ic-Dashboard-header__layout
+{
+    border-bottom-color: var(--secondary-text-color) !important;
 }
 
 a, button, span.Grouping-styles__title
@@ -56,7 +61,7 @@ div.ToDoSidebarItem, div.PlannerHeader button *, [data-cid="BaseButton IconButto
     color: var(--secondary-text-color) !important;
 }
 
-button#planner-today-btn *, div#course_show_secondary *, div.item-group-container *, button.btn, input[name="announcements_search"], span.css-j7s35e-formFieldLayout__children > span, button#mark_all_announcement_read > span, span.css-1ta5ds2-baseButton__content
+button#planner-today-btn *, div#course_show_secondary *, div.item-group-container *, button.btn, input[name="announcements_search"], span.css-j7s35e-formFieldLayout__children > span, button#mark_all_announcement_read > span, span.css-1ta5ds2-baseButton__content, a.btn
 {
     border-color: var(--secondary-text-color) !important;
 }
